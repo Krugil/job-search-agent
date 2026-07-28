@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: Arial, sans-serif; width: 320px; padding: 12px; background: #0d1117; color: #e6edf3; }
+  h3 { margin: 0 0 10px 0; font-size: 14px; }
+  label { display: block; font-size: 11px; color: #8b949e; margin-top: 8px; }
+  input, select { width: 100%; padding: 5px; margin-top: 2px; background: #161b22; color: #e6edf3; border: 1px solid #30363d; border-radius: 4px; box-sizing: border-box; font-size: 12px; }
+  button { width: 100%; margin-top: 12px; padding: 8px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 13px; }
+  #fillBtn { background: #1a7f37; color: white; }
+  #saveBtn { background: #30363d; color: white; }
+  #status { font-size: 11px; margin-top: 8px; color: #8b949e; text-align: center; }
+</style>
+</head>
+<body>
+  <h3>Job Autofill Profile</h3>
+
+  <label>First name</label>
+  <input id="firstName" type="text">
+  <label>Last name</label>
+  <input id="lastName" type="text">
+  <label>Email</label>
+  <input id="email" type="email">
+  <label>Phone</label>
+  <input id="phone" type="tel">
+  <label>Street address</label>
+  <input id="address" type="text">
+  <label>City</label>
+  <input id="city" type="text">
+  <label>State</label>
+  <input id="state" type="text">
+  <label>Zip</label>
+  <input id="zip" type="text">
+  <label>LinkedIn URL</label>
+  <input id="linkedin" type="text">
+  <label>Portfolio / GitHub URL</label>
+  <input id="portfolio" type="text">
+  <label>Authorized to work in the US?</label>
+  <select id="workAuthorized"><option value="Yes">Yes</option><option value="No">No</option></select>
+  <label>Require visa sponsorship?</label>
+  <select id="needsSponsorship"><option value="No">No</option><option value="Yes">Yes</option></select>
+  <label>School</label>
+  <input id="school" type="text">
+  <label>Degree / program</label>
+  <input id="degree" type="text">
+
+  <button id="saveBtn">Save Profile</button>
+  <button id="fillBtn">Fill This Page</button>
+  <button id="fillAllBtn" style="background:#9a6700; color:white;">Fill All Open Tabs</button>
+  <div id="status"></div>
+
+  <hr style="border-color:#30363d; margin-top:14px;">
+  <h3>Log to Tracker</h3>
+  <label>Tracker Web App URL (one-time setup)</label>
+  <input id="webAppUrl" type="text" placeholder="https://script.google.com/macros/s/.../exec">
+  <label>Company</label>
+  <input id="logCompany" type="text">
+  <label>Job Title</label>
+  <input id="logJobTitle" type="text">
+  <button id="logBtn" style="background:#1f6feb; color:white;">Log This Job as Applied</button>
+  <div id="logStatus" style="font-size:11px; margin-top:6px; color:#8b949e; text-align:center;"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
