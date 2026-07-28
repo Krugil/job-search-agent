@@ -5,7 +5,7 @@ This script does NOT browse websites with a fake mouse or fill out
 applications. It:
 
   1. Queries the Adzuna job API (a licensed aggregator - not scraping)
-     for engineering-technician-type roles near Raleigh, NC.
+     for engineering-technician-type roles near (location)
   2. Generates direct search links for company career pages (Biogen,
      Wolfspeed, Lilly, Novartis, Siemens) so you can check those by hand.
   3. Sends the Adzuna results to Gemini ONCE per batch (a normal text
